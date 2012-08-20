@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>jQuery UI Datepicker Improvement</title>
+	<link rel="stylesheet" href="css/jqueryui/jquery.ui.all.css">
+	<script src="js/jquery-1.4.4.min.js"></script>
+	<script src="js/jquery-ui-1.8.10.custom.min.js"></script>
+	<script src="js/jquery.ui.datepicker.my.js"></script>
+	<style type="text/css">
+	*{margin:0;padding:0;font-size:12px;}
+	</style>
+</head>
+<body>
+
+<div class="demo">
+<div style="position: relative;">
+	投放时间段： 
+  	<input id="sel_time_begin" name="sel_time_begin" class="input_time" value="yyyy-mm-dd">&nbsp;～&nbsp;<input id="sel_time_end" name="sel_time_end" class="input_time" value="yyyy-mm-dd"> 
+  	<input id="timelist2" type="hidden" name="timelist2">
+  	<input id="Fbegin_date" type="hidden" name="Fbegin_date">
+  	<input id="Fend_date" type="hidden" name="Fend_date">
+	<input id="add_date_re" type="hidden" name="add_date_re" value="1">
+  	&nbsp;<input id="sel_dates_btn" value="确定" type="button" name="sel_dates_btn"> 
+</div>
+</div>
+ <div style="position: relative;margin-bottom: 220px;">
+	<div style="margin-bottom: 5px;">
+	    <span style="margin-right: 40px;">已选定日期</span><span id="datenum" style="margin-right: 50px;">总天数：<font color="red"> 0 </font>天</span><input id='datepicker_input' type='text' style=' width:1px; height:1px; border:0px;'><span  id="datepicker"></span> 
+	</div>
+	<div>
+		<textarea name="timelist" id="timelist" style="width: 170px;height: 200px;"  readonly="readonly">暂无选定的日期</textarea>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
